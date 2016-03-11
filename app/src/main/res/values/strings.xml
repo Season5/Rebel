@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Rebel</string>
+
+
+    <string name="skip">Skipping</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+</resources>
