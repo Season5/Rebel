@@ -13,11 +13,8 @@
 
     <!-- Youtube-->
     <string name="DEVELOPER_KEY">Developerkey</string>
-    <string name="youtube_activity_fragment_placeholder">The YouTube Fragment can be placed anywhere
-        in a layout. You could use this space to describe the video, load some comments or anything else you can think of.
-    The benefit of using a Fragment is that your hosting Activity can be of any type.</string>
-    <string name="youtube_activity_placeholder">If you don\'t want to use a Fragment,
-        you can simply add a YouTubePlayerView to your layout file and handle it the same way.</string>
+    <string name="youtube_activity_fragment_placeholder">Lecrae say i wount.</string>
+    <string name="youtube_activity_placeholder">Thanks for watching.</string>
     <string name="video_list_title">Lecrae Youtube</string>
     <string name="player_style">Player Style</string>
     <string name="def">Default</string>
