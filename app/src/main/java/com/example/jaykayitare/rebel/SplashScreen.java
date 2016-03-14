@@ -24,7 +24,7 @@ public class SplashScreen extends AppCompatActivity {
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent intent = new Intent(SplashScreen.this,VideoActivity.class);
+                    Intent intent = new Intent(SplashScreen.this,AudioActivity.class);
                     startActivity(intent);
                     finish();
                 }
