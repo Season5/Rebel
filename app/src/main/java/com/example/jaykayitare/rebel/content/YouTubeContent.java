@@ -19,15 +19,15 @@ public class YouTubeContent {
     public static Map<String, YouTubeVideo> ITEM_MAP = new HashMap<>();
 
     static {
-        addItem(new YouTubeVideo("tttG6SdnCd4", "Open in the YouTube App"));
-        addItem(new YouTubeVideo("x-hH_Txxzls", "Open in the YouTube App in fullscreen"));
-        addItem(new YouTubeVideo("TTh_qYMzSZk", "Open in the Standalone player in fullscreen"));
-        addItem(new YouTubeVideo("tttG6SdnCd4", "Open in the Standalone player in \"Light Box\" mode"));
-        addItem(new YouTubeVideo("x-hH_Txxzls", "Open in the YouTubeFragment"));
-        addItem(new YouTubeVideo("TTh_qYMzSZk", "Hosting the YouTubeFragment in an Activity"));
-        addItem(new YouTubeVideo("tttG6SdnCd4", "Open in the YouTubePlayerView"));
-        addItem(new YouTubeVideo("x-hH_Txxzls", "Custom \"Light Box\" player with fullscreen handling"));
-        addItem(new YouTubeVideo("TTh_qYMzSZk", "Custom player controls"));
+        addItem(new YouTubeVideo("6iRTBh1gCjk", "Lecrae:\"All I need is you\""));
+        addItem(new YouTubeVideo("iVSX7uJeonE", "Lecrae:\"Freedom\""));
+        addItem(new YouTubeVideo("zf4Mgc6dV7s", "Lecrae:\"DejaVu\""));
+        addItem(new YouTubeVideo("F8NDgil12K0", "Lecrae: \"church clothes\""));
+        addItem(new YouTubeVideo("4qbnOLxI4T4", "Lecrae;:\"CHurch Clothes Film\""));
+        addItem(new YouTubeVideo("CR7SBRCKIuU", "Lecrae:Say i wount"));
+        addItem(new YouTubeVideo("EFVV5SXqqrA", "Lecrea:Confession"));
+        addItem(new YouTubeVideo("sN2oynpHATI", "Lecrae:Unshamed"));
+        addItem(new YouTubeVideo("YiUdrIsqmyQ", "Lecrea I'm Turnt"));
     }
 
     private static void addItem(final YouTubeVideo item) {
