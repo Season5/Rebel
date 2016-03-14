@@ -105,6 +105,18 @@ public class AudioActivity extends AppCompatActivity {
                 Log.d(TAG, "Error: " + error);
             }
         });
+
+//        scService.getUserTracks(new SimpleDateFormat("yyyy-MM-dd hh:mm:ss", Locale.US).format(new Date()), new Callback<List<Track>>() {
+//            @Override
+//            public void success(List<Track> tracks, Response response) {
+//                loadTracks(tracks);
+//            }
+//
+//            @Override
+//            public void failure(RetrofitError error) {
+//                Log.d(TAG, "Error: " + error);
+//            }
+//        });
     }
     private void loadTracks(List<Track> tracks){
         mListItems.clear();
