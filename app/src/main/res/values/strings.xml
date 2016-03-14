@@ -19,4 +19,10 @@
     <string name="youtube_activity_placeholder">If you don\'t want to use a Fragment,
         you can simply add a YouTubePlayerView to your layout file and handle it the same way.</string>
     <string name="video_list_title">Lecrae Youtube</string>
+    <string name="player_style">Player Style</string>
+    <string name="def">Default</string>
+    <string name="minimal">Minimal</string>
+    <string name="chromeless">Chromeless</string>
+    <string name="play">PLAY</string>
+    <string name="pause">PAUSE</string>
 </resources>
