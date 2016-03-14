@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.example.jaykayitare.rebel.R;
 
@@ -19,6 +21,7 @@ import yalantis.com.sidemenu.interfaces.ScreenShotable;
  */
 public class ContentFragment extends Fragment implements ScreenShotable {
     public static final String CLOSE = "Close";
+    public static final String DASHBOARD = "Dashboard";
     public static final String AUDIO = "Audio";
     public static final String VIDEO = "Video";
     public static final String BUY = "Buy";
@@ -26,6 +29,7 @@ public class ContentFragment extends Fragment implements ScreenShotable {
 
     private View containerView;
     protected ImageView mImageView;
+    protected RelativeLayout mRelativeLayout;
     protected int res;
     private Bitmap bitmap;
 
@@ -54,10 +58,12 @@ public class ContentFragment extends Fragment implements ScreenShotable {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-        mImageView = (ImageView) rootView.findViewById(R.id.image_content);
-        mImageView.setClickable(true);
-        mImageView.setFocusable(true);
-        mImageView.setImageResource(res);
+//        mImageView = (ImageView) rootView.findViewById(R.id.image_content);
+//        mImageView.setClickable(true);
+//        mImageView.setFocusable(true);
+//        mImageView.setImageResource(res);
+        mRelativeLayout = (RelativeLayout)rootView.findViewById(res);
+//        mRelativeLayout.setLayoutParams();
         return rootView;
     }
 
