@@ -1,13 +1,14 @@
 package com.example.jaykayitare.rebel;
 
+import android.app.FragmentTransaction;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
+import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.LinearLayout;
 
+import com.example.jaykayitare.rebel.fragment.AudioFragment;
 import com.example.jaykayitare.rebel.fragment.ContentFragment;
 
 import java.util.ArrayList;
@@ -33,7 +35,7 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
     private List<SlideMenuItem> list = new ArrayList<>();
     private ContentFragment contentFragment;
     private ViewAnimator viewAnimator;
-    private int res = R.drawable.rebel;
+    private int res = R.id.fragment_content;
     private LinearLayout linearLayout;
 
 
@@ -41,9 +43,10 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        contentFragment = ContentFragment.newInstance(R.drawable.rebel);
+        contentFragment = ContentFragment.newInstance(res);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_frame, contentFragment)
+                .addToBackStack(null)
                 .commit();
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawerLayout.setScrimColor(Color.TRANSPARENT);
@@ -62,16 +65,18 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
     }
 
     private void createMenuList() {
-        SlideMenuItem menuItem0 = new SlideMenuItem(ContentFragment.CLOSE, R.drawable.icn_close);
-        list.add(menuItem0);
-        SlideMenuItem menuItem = new SlideMenuItem(ContentFragment.AUDIO, R.drawable.rebel);
-        list.add(menuItem);
-        SlideMenuItem menuItem2 = new SlideMenuItem(ContentFragment.VIDEO, R.drawable.rebel);
-        list.add(menuItem2);
-        SlideMenuItem menuItem3 = new SlideMenuItem(ContentFragment.BUY, R.drawable.rebel);
-        list.add(menuItem3);
-        SlideMenuItem menuItem4 = new SlideMenuItem(ContentFragment.ABOUT, R.drawable.rebel);
-        list.add(menuItem4);
+        SlideMenuItem menuItemClose = new SlideMenuItem(ContentFragment.CLOSE, R.drawable.icn_close);
+        list.add(menuItemClose);
+        SlideMenuItem menuItemDashboard = new SlideMenuItem(ContentFragment.DASHBOARD, R.drawable.ic_dashboard_black_48dp);
+        list.add(menuItemDashboard);
+        SlideMenuItem menuItemAudio = new SlideMenuItem(ContentFragment.AUDIO, R.drawable.ic_music_note_black_48dp);
+        list.add(menuItemAudio);
+        SlideMenuItem menuItemVideo = new SlideMenuItem(ContentFragment.VIDEO, R.drawable.ic_music_video_black_48dp);
+        list.add(menuItemVideo);
+        SlideMenuItem menuItemBuy = new SlideMenuItem(ContentFragment.BUY, R.drawable.red_buynow);
+        list.add(menuItemBuy);
+        SlideMenuItem menuItemAbout = new SlideMenuItem(ContentFragment.ABOUT, R.drawable.rebel);
+        list.add(menuItemAbout);
     }
 
 
@@ -142,9 +147,8 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
         }
     }
 
-    private ScreenShotable replaceFragment(ScreenShotable screenShotable, int topPosition, int res) {
-//        this.res = this.res == R.drawable.kigali ? R.drawable.kigali : R.drawable.west;
-        this.res = res;
+    private ScreenShotable replaceFragment(ScreenShotable screenShotable, int topPosition) {
+        this.res = this.res == R.id.fragment_content ? R.id.audio_content : R.id.videofragment;
         View view = findViewById(R.id.content_frame);
         int finalRadius = Math.max(view.getWidth(), view.getHeight());
         SupportAnimator animator = ViewAnimationUtils.createCircularReveal(view, 0, topPosition, 0, finalRadius);
@@ -160,19 +164,13 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
 
     @Override
     public ScreenShotable onSwitch(Resourceble slideMenuItem, ScreenShotable screenShotable, int position) {
+
         switch (slideMenuItem.getName()) {
             case ContentFragment.CLOSE:
                 return screenShotable;
-            case ContentFragment.AUDIO:
-                return replaceFragment(screenShotable, position, R.drawable.rebel);
-            case ContentFragment.VIDEO:
-                return replaceFragment(screenShotable, position, R.drawable.rebel);
-            case ContentFragment.BUY:
-                return replaceFragment(screenShotable, position, R.drawable.rebel);
-            case ContentFragment.ABOUT:
-                return replaceFragment(screenShotable, position, R.drawable.rebel);
+
             default:
-                return replaceFragment(screenShotable, position,res);
+                return replaceFragment(screenShotable, position);
         }
     }
 
