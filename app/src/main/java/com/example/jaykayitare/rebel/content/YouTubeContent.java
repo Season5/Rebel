@@ -1,4 +1,4 @@
-package com.example.jaykayitare.rebel.Content;
+package com.example.jaykayitare.rebel.content;
 
 import java.util.ArrayList;
 import java.util.HashMap;
