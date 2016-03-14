@@ -7,5 +7,19 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_init_failure">Initialization failure: Unable to play video</string>
 
+    <!-- Youtube-->
+    <string name="DEVELOPER_KEY">Developerkey</string>
+    <string name="youtube_activity_fragment_placeholder">Lecrae say i wount.</string>
+    <string name="youtube_activity_placeholder">Thanks for watching.</string>
+    <string name="video_list_title">Lecrae Youtube</string>
+    <string name="player_style">Player Style</string>
+    <string name="def">Default</string>
+    <string name="minimal">Minimal</string>
+    <string name="chromeless">Chromeless</string>
+    <string name="play">PLAY</string>
+    <string name="pause">PAUSE</string>
 </resources>

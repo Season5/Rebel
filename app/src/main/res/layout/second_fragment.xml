@@ -2,17 +2,33 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/white"
     >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
+        android:layout_marginTop="38dp"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="First Slide"
-        android:id="@+id/textView"
-        android:textColor="@color/colorPrimary"
-        android:textSize="50dp"
+        android:text="Music now enhanced with Video and Audio streaming"
+        android:textAlignment="center"
+        android:id="@+id/textView3"
+        android:textSize="30dp"
+        android:textColor="#000"
         android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/guit"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
