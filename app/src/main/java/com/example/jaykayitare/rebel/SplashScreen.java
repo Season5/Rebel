@@ -25,7 +25,7 @@ public class
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent intent = new Intent(SplashScreen.this,AudioActivity.class);
+                    Intent intent = new Intent(SplashScreen.this,App_Activity.class);
                     startActivity(intent);
                     finish();
                 }
