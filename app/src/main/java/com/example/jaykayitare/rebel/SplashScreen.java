@@ -9,8 +9,7 @@ import com.viksaa.sssplash.lib.activity.AwesomeSplash;
 import com.viksaa.sssplash.lib.cnst.Flags;
 import com.viksaa.sssplash.lib.model.ConfigSplash;
 
-public class
-        SplashScreen extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity  {
 
 
     @Override
