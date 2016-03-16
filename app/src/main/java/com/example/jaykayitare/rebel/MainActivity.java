@@ -176,7 +176,7 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
                 Intent intent2 = new Intent(getApplicationContext(),AudioActivity.class);
                 startActivity(intent2);
             case ContentFragment.VIDEO:
-                Intent intent3 = new Intent(getApplicationContext(),YouTubeActivity.class);
+                Intent intent3 = new Intent(this,VideoActivity.class);
                 startActivity(intent3);
             case ContentFragment.BUY:
                 Intent intent4 = new Intent(getApplicationContext(),AudioActivity.class);
