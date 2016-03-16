@@ -149,7 +149,7 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
     }
 
     private ScreenShotable replaceFragment(ScreenShotable screenShotable, int topPosition) {
-        this.res = this.res == R.id.fragment_content ? R.id.audio_content : R.id.videofragment;
+//        this.res = this.res == R.id.fragment_content ? R.id.audio_content : R.id.videofragment;
         View view = findViewById(R.id.content_frame);
         int finalRadius = Math.max(view.getWidth(), view.getHeight());
         SupportAnimator animator = ViewAnimationUtils.createCircularReveal(view, 0, topPosition, 0, finalRadius);
@@ -179,10 +179,10 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
                 Intent intent3 = new Intent(getApplicationContext(),YouTubeActivity.class);
                 startActivity(intent3);
             case ContentFragment.BUY:
-                Intent intent4 = new Intent(getApplicationContext(),AudioActivity.class);
+                Intent intent4 = new Intent(getApplicationContext(),BuyActivity.class);
                 startActivity(intent4);
             default:
-                return replaceFragment(screenShotable, position);
+                return screenShotable;
         }
     }
 
