@@ -170,16 +170,16 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
             case ContentFragment.CLOSE:
                 return screenShotable;
             case ContentFragment.ABOUT:
-                Intent intent = new Intent(getApplicationContext(),AboutActivity.class);
+                Intent intent = new Intent(getBaseContext(),AboutActivity.class);
                 startActivity(intent);
             case ContentFragment.AUDIO:
-                Intent intent2 = new Intent(getApplicationContext(),AudioActivity.class);
+                Intent intent2 = new Intent(getBaseContext(),AudioActivity.class);
                 startActivity(intent2);
             case ContentFragment.VIDEO:
-                Intent intent3 = new Intent(getApplicationContext(),YouTubeActivity.class);
+                Intent intent3 = new Intent(getBaseContext(),YouTubeActivity.class);
                 startActivity(intent3);
             case ContentFragment.BUY:
-                Intent intent4 = new Intent(getApplicationContext(),BuyActivity.class);
+                Intent intent4 = new Intent(getBaseContext(),BuyActivity.class);
                 startActivity(intent4);
             default:
                 return screenShotable;
