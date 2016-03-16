@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GreenDay</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="brief">Getting people familiar with the event, what we do and all the necessary requirements to participate in the event.\n
+    Here, registration is fundamental because non registered members will not get a seat in the conference.</string>
+    <string name="muzik">Here members are allowed to socialize and are given a free hour of pure recreation and relaxation before the main event at night.\n
+    </string>
+    <string name="meet">Here registered members sit and attend the morning session. Speakers and Q and A sessions involved.</string>
+    <string name="lunch">Members are allowed an hour break for lunch.</string>
+    <string name="noon">Another evening session where Speakers and Q and A sessions are involved. </string>
+    <string name="badge">Awards are given to the most active participants, and certificated for all attendees of the conference.</string>
+    <string name="close">Closing remarks from the speakers in the conference, and from special guests. Official end of conference.</string>
+</resources>

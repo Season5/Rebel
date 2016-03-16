@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.onikah.greenday.Fragment3">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="159dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/meet"
+                android:id="@+id/meet"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="143dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Morning Session"
+                android:textSize="30dp"
+                android:id="@+id/morn2"
+                android:textColor="#000"
+                android:layout_marginTop="101dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/threecircle"
+                android:layout_alignTop="@+id/morn2"
+                android:layout_toLeftOf="@+id/morn2"
+                android:layout_toStartOf="@+id/morn2" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/badge"
+                android:id="@+id/textView2"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="370dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Badging"
+                android:textSize="30dp"
+                android:id="@+id/badging"
+                android:textColor="#000"
+                android:layout_marginTop="330dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/badge"
+                android:src="@drawable/badge"
+                android:layout_alignTop="@+id/badging"
+                android:layout_toLeftOf="@+id/badging"
+                android:layout_toStartOf="@+id/badging" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/close"
+                android:id="@+id/closing"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="570dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Closing Conference"
+                android:textSize="30dp"
+                android:id="@+id/close"
+                android:textColor="#000"
+                android:layout_marginTop="530dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/closer"
+                android:src="@drawable/badge"
+                android:layout_alignTop="@+id/close"
+                android:layout_toLeftOf="@+id/close"
+                android:layout_toStartOf="@+id/close" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
