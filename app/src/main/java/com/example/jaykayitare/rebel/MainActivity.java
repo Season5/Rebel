@@ -1,6 +1,7 @@
 package com.example.jaykayitare.rebel;
 
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
@@ -148,7 +149,7 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
     }
 
     private ScreenShotable replaceFragment(ScreenShotable screenShotable, int topPosition) {
-        this.res = this.res == R.id.fragment_content ? R.id.audio_content : R.id.videofragment;
+//        this.res = this.res == R.id.fragment_content ? R.id.audio_content : R.id.videofragment;
         View view = findViewById(R.id.content_frame);
         int finalRadius = Math.max(view.getWidth(), view.getHeight());
         SupportAnimator animator = ViewAnimationUtils.createCircularReveal(view, 0, topPosition, 0, finalRadius);
@@ -168,9 +169,20 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
         switch (slideMenuItem.getName()) {
             case ContentFragment.CLOSE:
                 return screenShotable;
-
+            case ContentFragment.ABOUT:
+                Intent intent = new Intent(getBaseContext(),AboutActivity.class);
+                startActivity(intent);
+            case ContentFragment.AUDIO:
+                Intent intent2 = new Intent(getBaseContext(),AudioActivity.class);
+                startActivity(intent2);
+            case ContentFragment.VIDEO:
+                Intent intent3 = new Intent(getBaseContext(),YouTubeActivity.class);
+                startActivity(intent3);
+            case ContentFragment.BUY:
+                Intent intent4 = new Intent(getBaseContext(),BuyActivity.class);
+                startActivity(intent4);
             default:
-                return replaceFragment(screenShotable, position);
+                return screenShotable;
         }
     }
 

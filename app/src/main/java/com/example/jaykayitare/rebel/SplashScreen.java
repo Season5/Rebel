@@ -9,7 +9,8 @@ import com.viksaa.sssplash.lib.activity.AwesomeSplash;
 import com.viksaa.sssplash.lib.cnst.Flags;
 import com.viksaa.sssplash.lib.model.ConfigSplash;
 
-public class SplashScreen extends AppCompatActivity {
+public class
+        SplashScreen extends AppCompatActivity {
 
 
     @Override
@@ -24,7 +25,7 @@ public class SplashScreen extends AppCompatActivity {
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent intent = new Intent(SplashScreen.this,AudioActivity.class);
+                    Intent intent = new Intent(SplashScreen.this,App_Activity.class);
                     startActivity(intent);
                     finish();
                 }
