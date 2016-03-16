@@ -1,5 +1,6 @@
 package com.example.jaykayitare.rebel;
 
+
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
@@ -32,5 +33,6 @@ public class BuyActivity extends AppCompatActivity {
     }
     private void openUrl(String url){
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+
     }
 }
