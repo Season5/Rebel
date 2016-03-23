@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#504c4c">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/fragment_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e93f3f">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/lecrae"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/lele" />
+
+                <TextView
+                    android:text="@string/lecrae"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lele"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center|bottom"
+                    android:layout_below="@+id/imageView3"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="38dp"
+                    android:textColor="#090909" />
+
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Listen on Soundcloud"
+                    android:id="@+id/audiobutton"
+                    android:layout_below="@+id/lele"
+                    android:background="#222222"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Watch on Youtube"
+                    android:layout_below="@+id/audiobutton"
+                    android:id="@+id/videobutton"
+                    android:background="#222222"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buy his albums"
+                    android:layout_below="@+id/videobutton"
+                    android:id="@+id/buybutton"
+                    android:background="#222222"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="About us"
+                    android:layout_below="@+id/buybutton"
+                    android:id="@+id/aboutbutton"
+                    android:background="#222222"
+                    android:textColor="#ffffff"/>
+
+
+            </RelativeLayout>
+        </ScrollView>
+</io.codetail.widget.RevealFrameLayout>
