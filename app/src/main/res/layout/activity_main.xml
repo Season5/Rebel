@@ -18,7 +18,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView3"
-                android:src="@drawable/l"
+                android:src="@drawable/lecrae"
                 android:layout_alignParentTop="true"
                 android:layout_alignStart="@+id/textView" />
 
