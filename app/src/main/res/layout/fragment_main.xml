@@ -20,11 +20,11 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView3"
-                android:src="@drawable/l"
+
                 android:layout_marginBottom="192dp"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true" />
-
+            <!--android:src="@drawable/l"-->
             <TextView
                 android:text="@string/lecrae"
                 android:layout_width="wrap_content"
