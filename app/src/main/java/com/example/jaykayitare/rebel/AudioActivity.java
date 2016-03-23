@@ -51,7 +51,7 @@ public class AudioActivity extends AppCompatActivity {
         mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-                mPlayerControl.setImageResource(R.drawable.ic_play);
+                mPlayerControl.setImageResource(R.drawable.lecrae);
             }
         });
 
@@ -126,11 +126,11 @@ public class AudioActivity extends AppCompatActivity {
     private void togglePlayPause(){
         if(mMediaPlayer.isPlaying()){
             mMediaPlayer.pause();
-            mPlayerControl.setImageResource(R.drawable.ic_play);
+            mPlayerControl.setImageResource(R.drawable.lecrae);
         }
         else {
             mMediaPlayer.start();
-            mPlayerControl.setImageResource(R.drawable.ic_pause);
+            mPlayerControl.setImageResource(R.drawable.lecrae);
         }
     }
     @Override

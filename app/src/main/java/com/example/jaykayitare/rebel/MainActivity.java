@@ -40,7 +40,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.fragment_main);
 
         about = (Button)findViewById(R.id.aboutbutton);
         buy = (Button)findViewById(R.id.buybutton);
