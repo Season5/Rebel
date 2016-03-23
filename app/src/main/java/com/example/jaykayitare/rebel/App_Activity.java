@@ -9,7 +9,7 @@ import com.github.paolorotolo.appintro.AppIntro;
 /**
  * Created by jaykayitare on 3/11/16.
  */
-public class App_Activity  extends AppIntro {
+public class App_Activity extends AppIntro {
 
     // Please DO NOT override onCreate. Use init.
     @Override
